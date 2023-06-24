@@ -12,7 +12,7 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
+    min-width: 389px;
 }
 
 body {
@@ -24,7 +24,6 @@ body {
 .sec_top {
     margin: 1rem auto;
     padding: 0 1rem;
-    min-width: 400px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -74,12 +73,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2rem;;
-    min-width: 400px;
 }
 
-.sec_middle_col article img {
- max-width: 100%;
-}
 
 .search_box {
     margin: 5px 15px;
@@ -129,7 +124,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    min-width: 400px;
 }
 
 .sec_bottom_col aside p {
@@ -140,7 +134,6 @@ body {
     display: flex;  
     padding: 1rem 2rem;  
     border-top: 1px solid #afadad;
-
 }
 
 .col_bottom {
@@ -169,4 +162,45 @@ body {
 
 .sec_bottom_row .right_text a:hover {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+
+    .sec_bottom_row {
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .search_box {
+        width: 300px;
+    }
+
+    .search_box aside input {
+        width:230px;
+    }
+
+
+    .sec_bottom_row {
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+    }
+
+    .col_bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col_bottom a {
+        font-size: 14px;
+        text-align: center;
+    }
 }
